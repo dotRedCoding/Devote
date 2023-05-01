@@ -19,7 +19,8 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item> // fetched result: Property(items) fills out the list using the forEach loop
 
-    // MARK: - FUNCTION (recommended to keep functions between the propertiers and body)
+    // MARK: - FUNCTION
+    // recommended to keep functions between the properties and body
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)

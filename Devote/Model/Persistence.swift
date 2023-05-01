@@ -8,13 +8,15 @@
 import CoreData
 
 struct PersistenceController {
-    // MARK: - 1. PERSISTENT CONTROLLER (singleton - sets up the model, context and stored coordinator)
+    // MARK: - 1. PERSISTENT CONTROLLER
+    // singleton - sets up the model, context and stored coordinator
     static let shared = PersistenceController()
 
     // MARK: - 2. PERSISTENT CONTAINER
     let container: NSPersistentContainer
     
-    // MARK: - 3. INITIALIZATION (load the persistent store)
+    // MARK: - 3. INITIALIZATION
+    // load the persistent store
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Devote") // path to temp storage
         if inMemory { // load the store persistent or temp
@@ -32,9 +34,12 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true) // switch to in memory store
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext) // sample data for the preview
+        for i in 0..<5 {
+            let newItem = Item(context: viewContext) // sample data for the preview (updated with new properties for testing)
             newItem.timestamp = Date()
+            newItem.task = "Sample task No\(i)"
+            newItem.completion = false
+            newItem.id = UUID()
         }
         do {
             try viewContext.save()

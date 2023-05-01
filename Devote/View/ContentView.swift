@@ -10,6 +10,8 @@ import CoreData
 
 struct ContentView: View {
     // MARK: - PROPERTY
+    
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false // default appearance is light mode
     @State var task: String = ""
     @State private var showNewTaskItem: Bool = false
     
@@ -61,6 +63,15 @@ struct ContentView: View {
                                 Capsule().stroke(Color.white, lineWidth: 2)
                             )
                         // MARK: - APPEARANCE BUTTON
+                        Button(action: {
+                            isDarkMode.toggle()
+                            // MARK: - TOGGLE APPEARANCE
+                        }, label: {
+                            Image(systemName: isDarkMode ? "moon.circle.fill" : "moon.circle")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .font(.system(.title, design: .rounded))
+                        })
                     } // End of HSTACK
                     .padding()
                     .foregroundColor(.white)

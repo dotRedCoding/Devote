@@ -22,6 +22,7 @@ struct ListRowItemView: View {
                 .padding(.vertical, 12)
                 .animation(.default)
         } // End of Toggle
+        .toggleStyle(CheckboxStyle())
         // objectWillChange is a publisher to subscribe too if there is a change it will perform an action
         .onReceive(item.objectWillChange, perform: { _ in
             if self.viewContext.hasChanges { // if there are changes, we try and save the new data

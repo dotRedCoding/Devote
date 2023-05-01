@@ -43,6 +43,8 @@ struct NewTaskItemView: View {
             Spacer()
             VStack(spacing: 16) {
                 TextField("New Task", text: $task)
+                    .foregroundColor(.pink)
+                    .font(.system(size: 24, weight: .bold, design: .rounded))
                     .padding()
                     .background(
                         Color(UIColor.systemGray6)
@@ -54,13 +56,13 @@ struct NewTaskItemView: View {
                 }, label: {
                     Spacer()
                     Text("SAVE")
+                        .font(.system(size: 24, weight: .bold, design: .rounded))
                     Spacer()
                 })
                 .disabled(isButtonDisabled) // will not allow saving of empty task text field
                 .padding()
-                .font(.headline)
                 .foregroundColor(.white)
-                .background(isButtonDisabled ? Color.gray : Color.pink) // color will swap if no text
+                .background(isButtonDisabled ? Color.blue : Color.pink) // color will swap if no text
                 .cornerRadius(10)
             } // End of VSTACK
             .padding(.horizontal)

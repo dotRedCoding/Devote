@@ -46,7 +46,26 @@ struct ContentView: View {
                 VStack {
                     
                     // MARK: - HEADER
+                    HStack(spacing: 10) {
+                        // MARK: - TITLE
+                        Text("DEVOTE")
+                            .font(.system(.largeTitle, design: .rounded, weight: .heavy))
+                            .padding(.leading, 4)
+                        Spacer()
+                        // MARK: - EDIT BUTTON
+                        EditButton()
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .padding(.horizontal, 10)
+                            .frame(minWidth: 70, minHeight: 24)
+                            .background(
+                                Capsule().stroke(Color.white, lineWidth: 2)
+                            )
+                        // MARK: - APPEARANCE BUTTON
+                    } // End of HSTACK
+                    .padding()
+                    .foregroundColor(.white)
                     Spacer(minLength: 80)
+                    
                     
                     // MARK: - NEW TASK BUTTON
                     Button(action: {
@@ -95,7 +114,7 @@ struct ContentView: View {
                                 showNewTaskItem = false
                             }
                         }
-                    NewTaskItemView()
+                    NewTaskItemView(isShowing: $showNewTaskItem) // we can pass the value of true or false by binding showNewTaskItems current state
                 }
                 
                 
@@ -105,11 +124,7 @@ struct ContentView: View {
             }
             .navigationTitle("Daily Tasks")
             .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-            }// End of Toolbar
+            .toolbar(.hidden) // might have to change this
             .background(
             BackgroundImageView()
             )

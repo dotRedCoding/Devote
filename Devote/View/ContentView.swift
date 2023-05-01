@@ -88,6 +88,17 @@ struct ContentView: View {
                 } // End of VSTACK
                 
                 // MARK: - NEW TASK ITEM
+                if showNewTaskItem { // if the property becomes true it will show the new view
+                    BlankView()
+                        .onTapGesture {
+                            withAnimation() {
+                                showNewTaskItem = false
+                            }
+                        }
+                    NewTaskItemView()
+                }
+                
+                
             } // END of ZSTACK
             .onAppear() {
                 UITableView.appearance().backgroundColor = UIColor.clear

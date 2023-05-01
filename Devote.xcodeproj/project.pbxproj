@@ -20,6 +20,7 @@
 		2126D1BF29FEC31A001B3176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2126D1BE29FEC31A001B3176 /* Preview Assets.xcassets */; };
 		2126D1C129FEC31A001B3176 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C029FEC31A001B3176 /* Persistence.swift */; };
 		2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C229FEC31A001B3176 /* Devote.xcdatamodeld */; };
+		218979042A0029870063AAB1 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979032A0029870063AAB1 /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2126D1BE29FEC31A001B3176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2126D1C029FEC31A001B3176 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2126D1C329FEC31A001B3176 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		218979032A0029870063AAB1 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				2126D1B929FEC318001B3176 /* ContentView.swift */,
 				2102D8562A0014930063B18D /* BackgroundImageView.swift */,
 				2102D8582A00161A0063B18D /* NewTaskItemView.swift */,
+				218979032A0029870063AAB1 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				2102D8572A0014930063B18D /* BackgroundImageView.swift in Sources */,
 				2126D1BA29FEC318001B3176 /* ContentView.swift in Sources */,
 				2102D8552A00090D0063B18D /* HideKeyboardExtension.swift in Sources */,
+				218979042A0029870063AAB1 /* BlankView.swift in Sources */,
 				2102D8532A00002B0063B18D /* Constant.swift in Sources */,
 				2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */,
 				2126D1B829FEC318001B3176 /* DevoteApp.swift in Sources */,

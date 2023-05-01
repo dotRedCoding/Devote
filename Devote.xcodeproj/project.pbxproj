@@ -12,6 +12,7 @@
 		2102D84629FFE8CD0063B18D /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2102D84329FFE8CD0063B18D /* sound-rise.mp3 */; };
 		2102D8532A00002B0063B18D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102D8522A00002B0063B18D /* Constant.swift */; };
 		2102D8552A00090D0063B18D /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102D8542A00090D0063B18D /* HideKeyboardExtension.swift */; };
+		2102D8572A0014930063B18D /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2102D8562A0014930063B18D /* BackgroundImageView.swift */; };
 		2126D1B829FEC318001B3176 /* DevoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1B729FEC318001B3176 /* DevoteApp.swift */; };
 		2126D1BA29FEC318001B3176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1B929FEC318001B3176 /* ContentView.swift */; };
 		2126D1BC29FEC319001B3176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2126D1BB29FEC319001B3176 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		2102D84D29FFEBC30063B18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2102D8522A00002B0063B18D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2102D8542A00090D0063B18D /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		2102D8562A0014930063B18D /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		2126D1B429FEC318001B3176 /* Devote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2126D1B729FEC318001B3176 /* DevoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevoteApp.swift; sourceTree = "<group>"; };
 		2126D1B929FEC318001B3176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2126D1B929FEC318001B3176 /* ContentView.swift */,
+				2102D8562A0014930063B18D /* BackgroundImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2126D1C129FEC31A001B3176 /* Persistence.swift in Sources */,
+				2102D8572A0014930063B18D /* BackgroundImageView.swift in Sources */,
 				2126D1BA29FEC318001B3176 /* ContentView.swift in Sources */,
 				2102D8552A00090D0063B18D /* HideKeyboardExtension.swift in Sources */,
 				2102D8532A00002B0063B18D /* Constant.swift in Sources */,

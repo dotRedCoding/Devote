@@ -21,6 +21,8 @@
 		2126D1C129FEC31A001B3176 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C029FEC31A001B3176 /* Persistence.swift */; };
 		2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C229FEC31A001B3176 /* Devote.xcdatamodeld */; };
 		218979042A0029870063AAB1 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979032A0029870063AAB1 /* BlankView.swift */; };
+		218979062A0036790063AAB1 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979052A0036790063AAB1 /* ListRowItemView.swift */; };
+		218979082A003ED00063AAB1 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979072A003ED00063AAB1 /* CheckboxStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2126D1C029FEC31A001B3176 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2126D1C329FEC31A001B3176 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
 		218979032A0029870063AAB1 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		218979052A0036790063AAB1 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		218979072A003ED00063AAB1 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				2102D8562A0014930063B18D /* BackgroundImageView.swift */,
 				2102D8582A00161A0063B18D /* NewTaskItemView.swift */,
 				218979032A0029870063AAB1 /* BlankView.swift */,
+				218979052A0036790063AAB1 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		2102D84B29FFE9150063B18D /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				218979072A003ED00063AAB1 /* CheckboxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 				2102D8552A00090D0063B18D /* HideKeyboardExtension.swift in Sources */,
 				218979042A0029870063AAB1 /* BlankView.swift in Sources */,
 				2102D8532A00002B0063B18D /* Constant.swift in Sources */,
+				218979062A0036790063AAB1 /* ListRowItemView.swift in Sources */,
 				2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */,
 				2126D1B829FEC318001B3176 /* DevoteApp.swift in Sources */,
+				218979082A003ED00063AAB1 /* CheckboxStyle.swift in Sources */,
 				2102D8592A00161A0063B18D /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

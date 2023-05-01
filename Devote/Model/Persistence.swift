@@ -37,7 +37,7 @@ struct PersistenceController {
         for i in 0..<5 {
             let newItem = Item(context: viewContext) // sample data for the preview (updated with new properties for testing)
             newItem.timestamp = Date()
-            newItem.task = "Sample task No\(i)"
+            newItem.task = "Sample task No \(i)"
             newItem.completion = false
             newItem.id = UUID()
         }

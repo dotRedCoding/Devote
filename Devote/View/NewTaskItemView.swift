@@ -57,6 +57,7 @@ struct NewTaskItemView: View {
                 
                 Button(action: {
                     addItem()
+                    playSound(sound: "sound-ding", type: "mp3")
                 }, label: {
                     Spacer()
                     Text("SAVE")
@@ -64,6 +65,11 @@ struct NewTaskItemView: View {
                     Spacer()
                 })
                 .disabled(isButtonDisabled) // will not allow saving of empty task text field
+                .onTapGesture {
+                    if isButtonDisabled {
+                        playSound(sound: "sound-tap", type: "mp3")
+                    }
+                }
                 .padding()
                 .foregroundColor(.white)
                 .background(isButtonDisabled ? Color.blue : Color.pink) // color will swap if no text

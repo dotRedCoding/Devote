@@ -20,6 +20,7 @@
 		2126D1BF29FEC31A001B3176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2126D1BE29FEC31A001B3176 /* Preview Assets.xcassets */; };
 		2126D1C129FEC31A001B3176 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C029FEC31A001B3176 /* Persistence.swift */; };
 		2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2126D1C229FEC31A001B3176 /* Devote.xcdatamodeld */; };
+		218335F72A013CF4003A72F7 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218335F62A013CF4003A72F7 /* SoundPlayer.swift */; };
 		218979042A0029870063AAB1 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979032A0029870063AAB1 /* BlankView.swift */; };
 		218979062A0036790063AAB1 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979052A0036790063AAB1 /* ListRowItemView.swift */; };
 		218979082A003ED00063AAB1 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218979072A003ED00063AAB1 /* CheckboxStyle.swift */; };
@@ -41,6 +42,7 @@
 		2126D1BE29FEC31A001B3176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2126D1C029FEC31A001B3176 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2126D1C329FEC31A001B3176 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		218335F62A013CF4003A72F7 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		218979032A0029870063AAB1 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		218979052A0036790063AAB1 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
 		218979072A003ED00063AAB1 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2102D8522A00002B0063B18D /* Constant.swift */,
+				218335F62A013CF4003A72F7 /* SoundPlayer.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				2126D1C429FEC31A001B3176 /* Devote.xcdatamodeld in Sources */,
 				2126D1B829FEC318001B3176 /* DevoteApp.swift in Sources */,
 				218979082A003ED00063AAB1 /* CheckboxStyle.swift in Sources */,
+				218335F72A013CF4003A72F7 /* SoundPlayer.swift in Sources */,
 				2102D8592A00161A0063B18D /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
